@@ -1,0 +1,28 @@
+---
+layout: ../layouts/Base.astro
+---
+
+<div class="newsletter">
+  <h1>Join Our Newsletter</h1>
+  <p>Get daily AI tooling breakdowns delivered to your inbox.</p>
+  
+  <form action="/api/subscribe" method="POST" class="subscribe-form">
+    <input type="email" name="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe</button>
+  </form>
+  
+  <div class="preview">
+    <h2>Sample Issue</h2>
+    <article class="issue-preview">
+      <h3>Tool: LangChain + OpenAI API Integration</h3>
+      <p>Quick setup guide with working code example.</p>
+      <pre><code>// Setup
+const { OpenAI } = require('langchain/llms/openai');
+
+const model = new OpenAI({
+  temperature: 0.9,
+  openAIApiKey: process.env.OPENAI_API_KEY
+});</code></pre>
+    </article>
+  </div>
+</div>

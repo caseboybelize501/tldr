@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  
+  # Research agent
+  research-agent:
+    build: ./agents/research
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+    
+  # Coding agent
+  coding-agent:
+    build: ./agents/coding
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+    
+  # Execution agent
+  execution-agent:
+    build: ./agents/execution
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+    
+  # Critic agent
+  critic-agent:
+    build: ./agents/critic
+    volumes:
+      - ./data:/app/data
+    environment:
+      - NODE_ENV=production
+    
+  # Web app
+  web-app:
+    build: .
+    ports:
+      - "4321:4321"
+    depends_on:
+      - research-agent
+      - coding-agent
+      - execution-agent
+      - critic-agent
+    environment:
+      - NODE_ENV=production

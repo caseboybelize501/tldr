@@ -1,0 +1,33 @@
+{
+  "freeTier": {
+    "features": [
+      "Daily tool breakdowns",
+      "Basic code examples",
+      "Twitter threads"
+    ],
+    "price": 0
+  },
+  "premiumTier": {
+    "features": [
+      "All Free features",
+      "Deep-dive technical guides",
+      "Sandboxed code demos",
+      "YouTube short scripts",
+      "Early access to tools",
+      "Affiliate program access"
+    ],
+    "price": 29
+  },
+  "sponsorships": [
+    "AI tool companies",
+    "Developer tool providers"
+  ],
+  "affiliateProgram": {
+    "commissionRate": 15,
+    "tools": [
+      "LangChain",
+      "OpenAI API",
+      "Hugging Face"
+    ]
+  }
+}

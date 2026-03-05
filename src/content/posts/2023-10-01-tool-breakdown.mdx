@@ -1,0 +1,57 @@
+import { CodeBlock } from '../../components/CodeBlock';
+
+# Tool Breakdown: LangChain + OpenAI API Integration
+
+## Overview
+
+LangChain is a powerful framework for building applications with LLMs. This guide shows how to integrate it with OpenAI's API.
+
+## Setup
+
+<CodeBlock language="javascript">
+{`
+// Install dependencies
+npm install langchain openai
+
+// Basic setup
+const { OpenAI } = require('langchain/llms/openai');
+
+const model = new OpenAI({
+  temperature: 0.9,
+  openAIApiKey: process.env.OPENAI_API_KEY
+});
+`}
+</CodeBlock>
+
+## Usage Example
+
+<CodeBlock language="javascript">
+{`
+// Simple prompt
+const response = await model.call("Explain quantum computing in simple terms.");
+console.log(response);
+
+// Chain example
+const chain = new LLMChain({
+  llm: model,
+  prompt: PromptTemplate.fromTemplate(
+    "What is {subject} and why is it important?"
+  )
+});
+`}
+</CodeBlock>
+
+## Key Features
+
+- Easy integration with multiple LLM providers
+- Chain building for complex workflows
+- Memory management
+- Tool calling capabilities
+
+## Twitter Thread
+
+1/3: New tool breakdown! LangChain + OpenAI API integration. Simple setup, powerful results.
+
+2/3: Basic setup requires just 2 lines of code. No need to reinvent the wheel.
+
+3/3: Perfect for indie hackers building AI-powered applications. Try it today!

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Top AI tool for code generation for indie hackers",
+    "keywords": [
+      "ai tools",
+      "indie hackers",
+      "productivity"
+    ],
+    "intent": "high",
+    "source": "X/Reddit/HN"
+  },
+  {
+    "title": "LLM fine-tuning frameworks for indie developers",
+    "keywords": [
+      "llm",
+      "fine-tuning",
+      "indie developers"
+    ],
+    "intent": "high",
+    "source": "X/Reddit/HN"
+  },
+  {
+    "title": "Prompt engineering tools for beginners",
+    "keywords": [
+      "prompt engineering",
+      "beginners",
+      "ai tools"
+    ],
+    "intent": "high",
+    "source": "X/Reddit/HN"
+  },
+  {
+    "title": "AI-powered content creation platforms",
+    "keywords": [
+      "content creation",
+      "ai",
+      "indie hackers"
+    ],
+    "intent": "high",
+    "source": "X/Reddit/HN"
+  },
+  {
+    "title": "Open source LLMs for developers",
+    "keywords": [
+      "open source",
+      "llm",
+      "developers"
+    ],
+    "intent": "high",
+    "source": "X/Reddit/HN"
+  }
+]
